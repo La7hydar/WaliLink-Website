@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -98,28 +98,28 @@
 
     <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4" data-i18n="page.register">Visit & Register</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4" data-i18n="page.register">Enroll Your Child</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="index.html" data-i18n="crumb.home">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#" data-i18n="crumb.pages">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page" data-i18n="page.register">Visit & Register</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page" data-i18n="page.register">Enroll Your Child</li>
                 </ol>
             </nav>
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/Penutupan Ujian.png" alt="Penutupan ujian santri Pondok Al-Munawwarah" style="object-fit: cover;">
-                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/Ustadzah Najwa - 1-1.jpeg" alt="Ustadzah Najwa" style="width: 200px; height: 200px;">
+                        <img class="position-absolute w-100 h-100" src="img/Manasik Haji 3.png" alt="Santri mengikuti praktik manasik haji" style="object-fit: cover;">
+                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/Azmi Syahid.jpeg" alt="Ustadz Gus Azmi Syahid" style="width: 180px; height: 240px; object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h6 class="text-primary text-uppercase mb-2" data-i18n="register.kicker">Visit & Register</h6>
+                    <h6 class="text-primary text-uppercase mb-2" data-i18n="register.kicker">Enroll Your Child</h6>
                     <h1 class="display-6 mb-4" data-i18n="register.title">Plan a Visit or Register Your Child at Al-Munawwarah</h1>
                     <p class="mb-4" data-i18n="register.formIntro">Send an initial registration inquiry. Our team will contact you about the next steps.</p>
                     <form id="registration-form" novalidate>
@@ -182,6 +182,39 @@
         </div>
     </div>
 
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="register.kicker">Enroll Your Child</h6>
+                <h2 class="display-6 mb-4" data-i18n="register.stepsTitle">How the enrollment inquiry works</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">01</span>
+                        <h3 class="h4" data-i18n="register.step1">1. Share your details</h3>
+                        <p class="mb-0" data-i18n="register.step1Text">Tell us how to reach you and which program interests your child.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">02</span>
+                        <h3 class="h4" data-i18n="register.step2">2. We receive your inquiry</h3>
+                        <p class="mb-0" data-i18n="register.step2Text">Your form is saved to the admissions inquiry database for the pondok team.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">03</span>
+                        <h3 class="h4" data-i18n="register.step3">3. Continue with our team</h3>
+                        <p class="mb-0" data-i18n="register.step3Text">The team follows up to explain requirements and the official enrollment process.</p>
+                    </article>
+                </div>
+            </div>
+            <p class="text-muted text-center mt-4 mb-0" data-i18n="register.privacyNote">Only the information needed to respond is requested. Please do not send passwords, payment details, or sensitive health information.</p>
+        </div>
+    </div>
+
     <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
@@ -197,7 +230,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -205,7 +238,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -251,7 +284,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
     <script src="js/registration.js"></script>
 </body>
 

@@ -561,6 +561,16 @@ html[data-theme="dark"] .dropdown-menu.bg-light {
     background-color: #15241C !important;
 }
 
+html[data-theme="dark"] .text-muted {
+    color: #A7B8AE !important;
+}
+
+html[data-theme="dark"] .courses-item,
+html[data-theme="dark"] .journey-card,
+html[data-theme="dark"] .activity-card {
+    color: #C5D4CB;
+}
+
 html[data-theme="dark"] .container-fluid.bg-dark.text-light.p-0:not(.footer) {
     background: #101C16 !important;
     color: #E8F3EC !important;
@@ -663,6 +673,12 @@ html[data-theme="dark"] .breadcrumb-item a {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    animation: hero-drift 24s ease-in-out infinite alternate;
+}
+
+@keyframes hero-drift {
+    from { transform: scale(1); }
+    to { transform: scale(1.06); }
 }
 
 #header-carousel .carousel-caption {
@@ -687,6 +703,12 @@ html[data-theme="dark"] .breadcrumb-item a {
     border-radius: 1rem;
     background: #FFFFFF;
     box-shadow: 0 10px 32px rgba(15, 61, 36, .08);
+    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 42px rgba(15, 61, 36, .16);
 }
 
 .activity-video {
@@ -697,10 +719,85 @@ html[data-theme="dark"] .breadcrumb-item a {
     object-fit: cover;
 }
 
-.team-item > img {
+.story-photo {
+    display: block;
+    width: 100%;
     aspect-ratio: 4 / 3;
+    border-radius: .85rem;
     object-fit: cover;
-    object-position: center 28%;
+    transition: transform .5s ease, filter .5s ease;
+}
+
+.story-photo:hover {
+    transform: scale(1.035);
+    filter: saturate(1.08);
+}
+
+.journey-card {
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid #E1EBE4;
+    border-radius: 1rem;
+    background: linear-gradient(145deg, #FFFFFF, #F4FAF6);
+    box-shadow: 0 12px 34px rgba(15, 61, 36, .07);
+    transition: transform .35s ease, border-color .35s ease;
+}
+
+.journey-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.journey-number {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #FFFFFF;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(26, 155, 74, .24);
+}
+
+.enrollment-cta {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(26, 155, 74, .18);
+    border-radius: 1.25rem;
+    background: radial-gradient(circle at top right, rgba(26, 155, 74, .12), transparent 42%), #FFFFFF;
+    box-shadow: 0 16px 44px rgba(15, 61, 36, .09);
+}
+
+.reading-progress {
+    position: fixed;
+    inset: 0 auto auto 0;
+    z-index: 100000;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    transform: scaleX(0);
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+.motion-ready [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s cubic-bezier(.2, .65, .3, 1);
+}
+
+.motion-ready [data-reveal].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-item > img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center 22%;
 }
 
 html[data-theme="dark"] .activity-card {
@@ -710,6 +807,37 @@ html[data-theme="dark"] .activity-card {
 
 html[data-theme="dark"] .text-muted {
     color: #A7B8AE !important;
+}
+
+html[data-theme="dark"] .journey-card {
+    border-color: #24362C;
+    background: linear-gradient(145deg, #15241C, #101C16);
+    color: #C5D4CB;
+}
+
+html[data-theme="dark"] .enrollment-cta {
+    border-color: #24362C;
+    background: radial-gradient(circle at top right, rgba(26, 155, 74, .14), transparent 42%), #101C16;
+}
+
+html[data-theme="dark"] .journey-card h3 {
+    color: #F2F8F4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+    .motion-ready [data-reveal] {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 #header-carousel .carousel-caption .col-lg-7 {

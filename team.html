@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -109,15 +109,15 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2" data-i18n="team.kicker">Meet The Teachers</h6>
-                <h1 class="display-6 mb-4" data-i18n="team.title">Asatidz Who Guide With Knowledge and Care</h1>
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="team.kicker">Meet Our Team</h6>
+                <h1 class="display-6 mb-4" data-i18n="team.title">People Behind Learning and Daily Life</h1>
             </div>
 
             <div class="row g-4 justify-content-center team-items">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative h-100">
                         <img class="img-fluid w-100" src="img/Mudir-Pimpinan Pondok.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A.">
                         <div class="bg-light text-center p-4">
@@ -126,12 +126,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative h-100">
-                        <img class="img-fluid w-100" src="img/Ustadzah Najwa.jpeg" alt="Ustadzah Najwa">
+                        <img class="img-fluid w-100" src="img/Azmi Syahid.jpeg" alt="Gus Azmi Syahid, ustadz Pondok Al-Munawwarah">
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2" data-i18n="team.azmi">Gus Azmi Syahid</h5>
+                            <span data-i18n="team.azmiRole">Ustadz and key member of the pondok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative h-100">
+                        <img class="img-fluid w-100" src="img/Ustadzah Najwa.jpeg" alt="Ustadzah Najwa" loading="lazy">
                         <div class="bg-light text-center p-4">
                             <h5 class="mt-2" data-i18n="team.najwa">Ustadzah Najwa</h5>
-                            <span data-i18n="team.najwaRole">Teacher and mentor</span>
+                            <span data-i18n="team.najwaRole">Ustadzah and mentor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative h-100">
+                        <img class="img-fluid w-100" src="img/Serda Muhammad Ikhsan.png" alt="Serda Muhammad Ikhsan, former ustadz" loading="lazy">
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2" data-i18n="team.ikhsan">Serda Muhammad Ikhsan</h5>
+                            <span data-i18n="team.ikhsanRole">Former ustadz</span>
                         </div>
                     </div>
                 </div>
@@ -155,7 +173,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -163,7 +181,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -209,7 +227,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
 </body>
 
 </html>

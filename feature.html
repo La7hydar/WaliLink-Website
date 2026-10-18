@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -150,9 +150,51 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100" src="img/Kegiatan Pramuka Cewek 2.png" alt="Santriwati mengikuti kegiatan pramuka" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/Mudir-Pimpinan Pondok 1-1.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A., mudir pondok" style="width: 200px; height: 200px">
+                        <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/Mudir-Pimpinan Pondok.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A., mudir pondok" style="width: 180px; height: 240px; object-fit: cover;">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="activities.valuesKicker">Learning by doing</h6>
+                <h2 class="display-6 mb-4" data-i18n="activities.valuesTitle">Faith, knowledge, and character in action</h2>
+                <p data-i18n="activities.valuesText">From Qur'an study to manasik and scouting, students learn through guidance, repetition, and community.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <article class="activity-card h-100">
+                        <video class="activity-video" controls preload="none" playsinline poster="img/kegiatan manasik haji 1.png" aria-label="Learning the Hajj rites" data-i18n-aria="gallery.hajj">
+                            <source src="img/Kegiatan Manasik Haji.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.hajj">Learning the Hajj rites</h3>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Ngaji Putri.png" alt="Santriwati studying the Qur'an" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.ngaji">Qur'an study for santriwati</h3>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Pramuka Cewek.png" alt="Santriwati taking part in scouting" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.pramukaGirls">Scouting activities for santriwati</h3>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Penutupan Ujian.png" alt="Students at an end-of-exams gathering" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.exam">End-of-exams gathering</h3>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary py-3 px-5" href="appointment.html" data-i18n="nav.register">Enroll Your Child</a>
             </div>
         </div>
     </div>
@@ -172,7 +214,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -180,7 +222,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -226,7 +268,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
 </body>
 
 </html>

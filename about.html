@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -109,13 +109,13 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100" src="img/Masak Bareng Bupati.png" alt="Kegiatan kebersamaan bersama masyarakat dan pemerintah daerah" style="object-fit: cover;">
-                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/Mudir-Pimpinan Pondok 1-1.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A., mudir pondok" style="width: 200px; height: 200px;">
+                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/Mudir-Pimpinan Pondok.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A., mudir pondok" style="width: 180px; height: 240px; object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -131,14 +131,8 @@
                             <div class="col-sm-6"><i class="fa fa-check text-primary me-2"></i><span data-i18n="about.item4">Qualified Asatidz</span></div>
                         </div>
                         <div class="row g-4">
-                            <div class="col-sm-6">
-                                <a class="btn btn-primary py-3 px-5" href="about.html" data-i18n="about.read">Read More</a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="tel:+0123456789">
-                                    <span class="flex-shrink-0 btn-square bg-primary"><i class="fa fa-phone-alt text-white"></i></span>
-                                    <span class="px-3">+012 345 6789</span>
-                                </a>
+                            <div class="col-12">
+                                <a class="btn btn-primary py-3 px-5" href="appointment.html" data-i18n="nav.register">Enroll Your Child</a>
                             </div>
                         </div>
                     </div>
@@ -147,34 +141,78 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2" data-i18n="team.kicker">Meet The Teachers</h6>
-                <h1 class="display-6 mb-4" data-i18n="team.title">Asatidz Who Guide With Knowledge and Care</h1>
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="about.lifeKicker">Life at the Pondok</h6>
+                <h2 class="display-6 mb-4" data-i18n="about.lifeTitle">Learning happens in many ways</h2>
             </div>
-
-            <div class="row g-4 justify-content-center team-items">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative h-100">
-                        <img class="img-fluid w-100" src="img/Mudir-Pimpinan Pondok.png" alt="Dr. Kh. Amaluddin Lamani, Lc., M.A.">
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2" data-i18n="team.mudir">Dr. Kh. Amaluddin Lamani, Lc., M.A.</h5>
-                            <span data-i18n="team.mudirRole">Mudir (Head of the Pondok)</span>
-                        </div>
-                    </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Ngaji Putri.png" alt="Santriwati belajar Al-Qur'an bersama" loading="lazy">
+                        <h5 class="p-3 mb-0" data-i18n="about.lifeQuran">Qur'an study and muraja'ah</h5>
+                    </article>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative h-100">
-                        <img class="img-fluid w-100" src="img/Ustadzah Najwa.jpeg" alt="Ustadzah Najwa">
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2" data-i18n="team.najwa">Ustadzah Najwa</h5>
-                            <span data-i18n="team.najwaRole">Teacher and mentor</span>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Manasik Haji 2.png" alt="Santri practicing manasik haji" loading="lazy">
+                        <h5 class="p-3 mb-0" data-i18n="gallery.hajj">Learning the Hajj rites</h5>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Pramuka Cowok.png" alt="Santri taking part in scouting" loading="lazy">
+                        <h5 class="p-3 mb-0" data-i18n="gallery.pramukaBoys">Scouting and teamwork</h5>
+                    </article>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Senam Pagi.png" alt="Santri taking part in morning exercise" loading="lazy">
+                        <h5 class="p-3 mb-0" data-i18n="gallery.exercise">Morning exercise</h5>
+                    </article>
                 </div>
             </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary py-3 px-5" href="team.html" data-i18n="about.meetTeachers">Meet our team</a>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="about.pathwayKicker">A balanced learning journey</h6>
+                <h2 class="display-6 mb-4" data-i18n="about.pathwayTitle">Knowledge grows through practice and community</h2>
+                <p data-i18n="about.pathwayIntro">The pondok brings together Qur'anic learning, Islamic knowledge, and the shared routines that help santri grow.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">01</span>
+                        <h3 class="h4" data-i18n="about.pathwayQuran">Learn with the Qur'an</h3>
+                        <p class="mb-0" data-i18n="about.pathwayQuranText">Daily recitation, memorization, and muraja'ah make the Qur'an part of students' learning routine.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">02</span>
+                        <h3 class="h4" data-i18n="about.pathwayKnowledge">Build a foundation of knowledge</h3>
+                        <p class="mb-0" data-i18n="about.pathwayKnowledgeText">Islamic studies and Arabic support understanding, thoughtful questions, and continued learning.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">03</span>
+                        <h3 class="h4" data-i18n="about.pathwayCharacter">Practice character together</h3>
+                        <p class="mb-0" data-i18n="about.pathwayCharacterText">Boarding life, teamwork, and shared responsibilities give santri ways to practice adab and independence.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary py-3 px-5 me-2 mb-2" href="courses.html" data-i18n="about.explorePrograms">Explore programs</a>
+                <a class="btn btn-outline-primary py-3 px-5 mb-2" href="appointment.html" data-i18n="nav.register">Enroll Your Child</a>
+            </div>
         </div>
     </div>
 
@@ -193,7 +231,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -201,7 +239,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -247,7 +285,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
 </body>
 
 </html>

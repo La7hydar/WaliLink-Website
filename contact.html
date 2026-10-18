@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -109,53 +109,116 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 450px;">
-                    <div class="position-relative h-100">
-                        <iframe class="position-relative w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="text-primary text-uppercase mb-2" data-i18n="contact.kicker">Contact Us</h6>
+                    <h1 class="display-6 mb-4" data-i18n="contact.title">Begin a Conversation About Enrollment</h1>
+                    <p class="mb-4" data-i18n="contact.text">Send an enrollment inquiry and our team can follow up with information about the next steps.</p>
+                    <h2 class="h3 mb-3" data-i18n="contact.admissionTitle">A clear first step for your family</h2>
+                    <p class="mb-4" data-i18n="contact.admissionText">Use the enrollment form to tell us which program interests your child. The pondok will receive your inquiry and follow up about the admissions process.</p>
+                    <a class="btn btn-primary py-3 px-5" href="appointment.html" data-i18n="nav.register">Enroll Your Child</a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative overflow-hidden rounded-4 h-100" style="min-height: 360px;">
+                        <img class="position-absolute w-100 h-100" src="img/Bupati Buton Tengah Hadiri Wisuda Siswa Akhir KMI 2025 dan Tasyakuran Penghafal Al-Qur’an di Po.webp" alt="Graduates and Qur'an memorizers at Pondok Al-Munawwarah" style="object-fit: cover;">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h6 class="text-primary text-uppercase mb-2" data-i18n="contact.kicker">Contact Us</h6>
-                    <h1 class="display-6 mb-4" data-i18n="contact.title">Have a Question? Please Reach Out to the Pondok</h1>
-                    <p class="mb-4" data-i18n="contact.text">Parents and prospective santri are welcome to contact Pondok Pesantren Al-Munawwarah for admission, visits, and general information.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
-                                    <label for="name" data-i18n="form.name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0 bg-light" id="email" placeholder="Your Email">
-                                    <label for="email" data-i18n="form.email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
-                                    <label for="subject" data-i18n="form.subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0 bg-light" placeholder="Message" id="message" style="height: 150px"></textarea>
-                                    <label for="message" data-i18n="form.message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit" data-i18n="form.sendMessage">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 680px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="contact.kicker">Contact Us</h6>
+                <h2 class="display-6 mb-4" data-i18n="contact.stepsTitle">What happens next?</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">01</span>
+                        <h3 class="h4" data-i18n="contact.step1">Send your inquiry</h3>
+                        <p class="mb-0" data-i18n="contact.step1Text">Share a guardian contact, age, and program of interest.</p>
+                    </article>
                 </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">02</span>
+                        <h3 class="h4" data-i18n="contact.step2">The pondok reviews it</h3>
+                        <p class="mb-0" data-i18n="contact.step2Text">Your information is stored securely as an admissions inquiry.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100" data-reveal>
+                        <span class="journey-number">03</span>
+                        <h3 class="h4" data-i18n="contact.step3">Continue with the team</h3>
+                        <p class="mb-0" data-i18n="contact.step3Text">The pondok will contact you with the next admissions steps.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="contact.lifeKicker">Get to know pondok life</h6>
+                <h2 class="display-6 mb-4" data-i18n="contact.lifeTitle">A glimpse of learning and community</h2>
+                <p data-i18n="contact.lifeIntro">Explore real activities at Al-Munawwarah while you consider the right next step for your family.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Ngaji Putri.png" alt="Santriwati studying the Qur'an together" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.ngaji">Qur'an study for santriwati</h3>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Manasik Haji 3.png" alt="Santri learning the Hajj rites together" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.hajj">Learning the Hajj rites</h3>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="activity-card h-100">
+                        <img class="activity-video" src="img/Kegiatan Pramuka Cowok.png" alt="Santri practicing teamwork through scouting" loading="lazy">
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.pramukaBoys">Scouting and teamwork</h3>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="contact.faqKicker">Common questions</h6>
+                <h2 class="display-6 mb-4" data-i18n="contact.faqTitle">Before you send an inquiry</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <article class="journey-card h-100">
+                        <h3 class="h4" data-i18n="contact.faq1">Does the inquiry complete enrollment?</h3>
+                        <p class="mb-0" data-i18n="contact.faq1Text">No. It is an initial request for information. The pondok team will explain the official enrollment requirements and next steps.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100">
+                        <h3 class="h4" data-i18n="contact.faq2">What details should I provide?</h3>
+                        <p class="mb-0" data-i18n="contact.faq2Text">Share a guardian's name and email, the student's age, and the program you are interested in. A message is optional.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article class="journey-card h-100">
+                        <h3 class="h4" data-i18n="contact.faq3">What should I leave out?</h3>
+                        <p class="mb-0" data-i18n="contact.faq3Text">Do not include passwords, payment details, or sensitive medical information in the inquiry.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a class="btn btn-primary py-3 px-5" href="appointment.html" data-i18n="contact.sendInquiry">Send an enrollment inquiry</a>
             </div>
         </div>
     </div>
@@ -175,7 +238,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -183,7 +246,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -229,7 +292,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
 </body>
 
 </html>

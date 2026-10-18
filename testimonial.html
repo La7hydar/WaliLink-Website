@@ -9,13 +9,13 @@
     <meta content="Islamic boarding school website for Pondok Pesantren Al-Munawwarah" name="description">
     <script>
         (function () {
-            var theme = localStorage.getItem("am-theme") === "dark" ? "dark" : "light";
+            var theme = localStorage.getItem("am-theme") === "light" ? "light" : "dark";
             var lang = localStorage.getItem("am-lang") === "id" ? "id" : "en";
             document.documentElement.setAttribute("data-theme", theme);
             document.documentElement.setAttribute("lang", lang);
         })();
     </script>
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.svg" rel="icon" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css?v=20261018-portrait-testimonials" rel="stylesheet">
 </head>
 
 <body>
@@ -109,12 +109,12 @@
         </div>
     </div>
 
-    <div class="container-xxl py-6">
+    <div class="container-xxl py-6 story-section" data-reveal>
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2" data-i18n="testi.kicker">Testimonial</h6>
                 <h1 class="display-6 mb-4" data-i18n="testi.title">Growing Together at the Pondok</h1>
-                <p class="text-muted small" data-i18n="testi.note">These are school-written profile captions, not direct interview quotes.</p>
+                <p class="text-muted small" data-i18n="testi.note">These are draft opinions written for review by each speaker. Please confirm with them before publishing as personal statements.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
@@ -123,39 +123,105 @@
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-circle mx-auto" src="img/Vita Citra Agung - Santri Pondok.png" alt="Vita Citra Agung, santri Pondok Al-Munawwarah">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                    <i class="fa fa-book-open fa-lg text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-4" data-i18n="testi.q1">Learning Qur'an, building good character, and growing in independence are part of everyday life in the pondok community.</p>
+                            <p class="fs-4" data-i18n="testi.q1">I feel that the pondok helps me grow closer to the Qur'an while learning discipline, independence, and adab in daily life.</p>
                             <hr class="w-25 mx-auto">
                             <h5 data-i18n="testi.n1">Vita Citra Agung</h5>
                             <span data-i18n="testi.r1">Santri</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/Ahnaf Haidar.jpeg" alt="Ahnaf Haidar, santri Pondok Al-Munawwarah">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/Gus Azmi Syahid.jpeg" alt="Gus Azmi Syahid, ustadz Pondok Al-Munawwarah" loading="lazy">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                    <i class="fa fa-book-open fa-lg text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-4" data-i18n="testi.q2">Daily study and shared activities help nurture discipline, confidence, and a lasting love of learning.</p>
+                            <p class="fs-4" data-i18n="testi.q2">I value how Al-Munawwarah brings Qur'anic learning, worship, and care for students together every day.</p>
                             <hr class="w-25 mx-auto">
-                            <h5 data-i18n="testi.n2">Ahnaf Haidar</h5>
-                            <span data-i18n="testi.r2">Santri</span>
+                            <h5 data-i18n="testi.n2">Gus Azmi Syahid</h5>
+                            <span data-i18n="testi.r2">Ustadz; the kiai's second son</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/Ustadzah Najwa - 1-1.jpeg" alt="Ustadzah Najwa" loading="lazy">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-book-open fa-lg text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4" data-i18n="testi.q4">I believe a caring routine helps santri feel supported as they learn, worship, and build good character.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 data-i18n="testi.n4">Ustadzah Najwa</h5>
+                            <span data-i18n="testi.r4">Ustadzah and mentor</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/Muhammad Ikhsan.png" alt="Serda Muhammad Ikhsan, former ustadz" loading="lazy">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-book-open fa-lg text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4" data-i18n="testi.q5">I value the discipline and sense of responsibility the pondok encourages alongside learning and worship.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 data-i18n="testi.n5">Serda Muhammad Ikhsan</h5>
+                            <span data-i18n="testi.r5">Former ustadz</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/Ahnaf Haidar.jpeg" alt="Ahnaf Haidar, IT support for the pondok" loading="lazy">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-laptop fa-lg text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4" data-i18n="testi.q6">I appreciate how reliable technology can support learning and the pondok's daily activities.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5 data-i18n="testi.n6">Ahnaf Haidar</h5>
+                            <span data-i18n="testi.r6">IT support</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
                                 <img class="img-fluid rounded-circle mx-auto" src="img/rehan.jpeg" alt="Rehan, santri Pondok Al-Munawwarah">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                    <i class="fa fa-book-open fa-lg text-primary"></i>
                                 </div>
                             </div>
-                            <p class="fs-4" data-i18n="testi.q3">Life at the pondok brings learning, friendship, and worship together in a caring community.</p>
+                            <p class="fs-4" data-i18n="testi.q3">For me, pondok life is about growing in knowledge and friendship while sharing worship and activities.</p>
                             <hr class="w-25 mx-auto">
                             <h5 data-i18n="testi.n3">Rehan</h5>
                             <span data-i18n="testi.r3">Santri</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-6 story-section" data-reveal>
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h6 class="text-primary text-uppercase mb-2" data-i18n="activities.valuesKicker">Learning by doing</h6>
+                <h2 class="display-6 mb-4" data-i18n="activities.valuesTitle">Faith, knowledge, and character in action</h2>
+                <p data-i18n="activities.valuesText">From Qur'an study to manasik and scouting, students learn through guidance, repetition, and community.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <article class="activity-card h-100">
+                        <video class="activity-video" controls preload="none" playsinline poster="img/kegiatan manasik haji 1.png" aria-label="Learning the Hajj rites" data-i18n-aria="gallery.hajj">
+                            <source src="img/Kegiatan Manasik Haji.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.hajj">Learning the Hajj rites</h3>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="activity-card h-100">
+                        <video class="activity-video" controls preload="none" playsinline poster="img/Kegiatan Ngaji Putri.png" aria-label="Qur'an study for santriwati" data-i18n-aria="gallery.ngaji">
+                            <source src="img/Kegiatan Ngaji Putri.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <h3 class="h5 p-3 mb-0" data-i18n="gallery.ngaji">Qur'an study for santriwati</h3>
+                    </article>
                 </div>
             </div>
         </div>
@@ -176,7 +242,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -184,7 +250,7 @@
                     <a class="btn btn-link" href="about.html" data-i18n="footer.about">About Us</a>
                     <a class="btn btn-link" href="contact.html" data-i18n="footer.contact">Contact Us</a>
                     <a class="btn btn-link" href="courses.html" data-i18n="footer.programs">Our Programs</a>
-                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Visit & Register</a>
+                    <a class="btn btn-link" href="appointment.html" data-i18n="footer.register">Enroll Your Child</a>
                     <a class="btn btn-link" href="team.html" data-i18n="footer.teachers">Teachers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -230,7 +296,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/site.js"></script>
+    <script src="js/site.js?v=20261018-portrait-testimonials"></script>
 </body>
 
 </html>
